@@ -906,5 +906,15 @@ a{
 
 
 /*   ###New Footer*/
-
+@media screen and (min-width: 1024px) {
+    
+     #Authorimage1 img{
+          width: 22%;
+          margin-top: 0;
+          
+     }
+     #Authorimage1{
+          padding-top: 0;
+     }
+   }
 
