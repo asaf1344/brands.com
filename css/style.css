@@ -37,7 +37,7 @@ html {
 }
 
 body {
-     background-image: linear-gradient(90deg, #1b94c4e8, #036891da);
+     background-image: linear-gradient(90deg, rgb(3, 156, 156), rgba(0, 92, 92, 0.986));
      color: #fa0303;
      font-size: 14px;
      font-family: Raleway;
@@ -296,6 +296,7 @@ button {
 .footer_section.layout_padding.margin_0 {
     margin: 0px;
     
+    
 }
 
 
@@ -533,6 +534,7 @@ button {
 }
 
 .footer_section{
+     margin-bottom: 8em;
      width: 100%;
      float: left;
      background-color: rgba(205, 92, 92, 0);
@@ -921,13 +923,21 @@ a{
           text-align: center;
          
      }
+     .about_text{
+          color: rgb(255, 255, 255);
+     }
    }
 
    @media screen and (max-width: 748px) {
     
      body {
           text-align: center;
+          
          
+     }
+
+     .about_text{
+          color: #0c5a66;
      }
 
      .column1{
@@ -1019,4 +1029,83 @@ a{
       }
     
      
+   }
+
+/*Footer column*/
+.footer_row {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+   }
+   
+   .footer_column {
+     display: flex;
+     flex-direction: column;
+     flex-basis: 100%;
+     flex: 1
+   }
+   
+   .orange-column {
+     background-color: #0c5a66;
+     height: 100px;
+   }
+   
+   .blue-column {
+     background-color: #D4AF37;
+     height: 100px;
+   }
+   
+   .green-column {
+     background-color: #0c5a66;
+     height: 100px;
+   }
+   .yellow-column {
+     background-color: #D4AF37;
+     height: 100px;
+   }
+   
+   .double-column {
+     display: flex;
+     flex-direction: column;
+     flex-basis: 100%;
+     flex: 2
+   }
+
+  #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgba(173, 216, 230, 0);
+  margin-top: 20px;
+  
+}
+#myDIV1 {
+     width: 100%;
+     padding: 50px 0;
+     text-align: center;
+     background-color: rgba(173, 216, 230, 0);
+     margin-top: 20px;
+     
+   }
+#myDIV3 {
+     width: 100%;
+     padding: 50px 0;
+     text-align: center;
+     background-color: rgba(173, 216, 230, 0);
+     margin-top: 20px;
+     
+   }
+   #myDIV4 {
+     width: 100%;
+     padding: 50px 0;
+     text-align: center;
+     background-color: rgba(173, 216, 230, 0);
+     margin-top: 20px;
+     
+   }
+   .footer{
+     position: fixed;
+     bottom: -18px;
+     margin-top: 3em;
    }
