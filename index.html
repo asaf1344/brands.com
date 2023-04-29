@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
 </head>
-<body>
+<body >
 	<!--header section start -->
 	<div class="header_section">
 		<div class="container-fluid">
@@ -41,7 +41,7 @@
 	<!--banner section start -->
 
 	
-	<div id="Authorimage1" class="bg_main">
+	<div  id="Authorimage1" class="bg_main">
 		<img src="images/bRANDS_LOGO_1.png">
 	</div>
 	
@@ -51,16 +51,16 @@
 	</div>-->
 	<!--banner section end -->
 	<!--bg_main section start -->
-	<div class="container">
+	<div  class="container">
 		<div>
 		<div id="Authorimage" class="bg_main"><img src="images/brands_logo.png"></div>
 		</div>
 	</div>
 	<!--bg_main section end -->
 	<!--about section start -->
-	<div class="about_section">
+	<div  class="about_section">
 		<div class="container">
-			<h1 class="about_text">BRANDS.COM</h1>
+			<h1 style="margin-top: 5px;color: #fff;" class="about_text">BRANDS.COM</h1>
 			
 		
 
@@ -75,8 +75,13 @@
 		-->
 		<!-- https://weimergeeks.com/wp/html-and-css/flexbox-notes/ --> 
 
+
+
+
+		<!--###### Tab 1 ##### -->
+		<div  id="myDIV1">
 		<!--******Row 1  *****-->
-		<div class="row">
+		<div  class="row">
 			<a href="tel:+96897856011"><div class="column1" >
 				<img src="images/Mob_ico_blue.png">
 			  	<h5 class="column11">Call Me</h5>
@@ -99,7 +104,7 @@
 
 
 		<!--******Row 2  *****-->
-		<div class="row">
+		<div  class="row">
 			<a href="https://www.google.com/maps/place/Al+Wadi+Center/@23.6111812,58.4963587,17z/data=!4m6!3m5!1s0x3e91f8ee08cb515f:0x605c10192bfa33a7!8m2!3d23.6111812!4d58.4963587!16s%2Fg%2F1hd_nh832?hl=en"><div class="column1" >
 				<img src="images/location_ico_red.png">
 			  	<h5 class="column11">Location</h5>
@@ -121,7 +126,7 @@
 		</div>
 
 		<!--******Row 3  *****-->
-		<div class="row">
+		<div  class="row">
 			<a href="tel:+96897856011"><div class="column1" >
 				<img src="images/office_ico_violet.png">
 			  	<h5 class="column11">Office</h5>
@@ -140,6 +145,7 @@
 			</div>
 			</a>
 		</div>
+		</div>
 	<!-- https://weimergeeks.com/wp/html-and-css/flexbox-notes/ --> 
 
 		<!--<button class="btn btn-1 col-sm-4  btn-sep icon- ">Website</button>
@@ -152,6 +158,44 @@
 
 
 	</div>
+	<!--###### Tab 1 end ##### -->
+
+	
+		
+	</div>
+
+	<!--###### Tab 2 ##### -->
+	<div style="display: none; color: #fff;" id="myDIV">
+		Company Details Currently Not Available<br>
+		Coming Soon... 
+	</div>
+	
+	<!--###### Tab 2 end ##### -->
+
+	
+		
+
+	
+	<!--###### Tab 3 ##### -->
+
+	<div style="display: none; color: #fff;" id="myDIV3">
+		Services are Currently Not Available<br>
+		Coming Soon...
+	</div>
+
+	
+	<!--###### Tab 3 end ##### -->
+	
+	<!--###### Tab 4 ##### -->
+
+	<div style="display: none; color: #fff;" id="myDIV4">
+		Call : +96897856011 <br>
+		Mail : sales@brands.com
+
+	</div>
+	<!--###### Tab 4 end ##### -->
+
+
 
 
 	
@@ -159,7 +203,7 @@
 	<div style="margin-top: 2em;padding-bottom:10px;" class="footer_section layout_padding">
 		<div class="container bg_white" >
 			<div class="social_icon social-navigation" style="background-color: #fff;border-radius: 15px;">
-				<h1 style="color: #1b94c4e8;padding-top: 1em;font-size: 15px;" class="about_text">Follow Us</h1>
+				<h1 style="padding-top: 1em;font-size: 15px;" class="about_text">Follow Us</h1>
 				<ul style="margin-top: -40px;">
 					<li ><a  href="https://www.snapchat.com/explore/brands.com.om/"><img  src="images/snapchat.png"></a></li>
 					<li><a href="https://twitter.com/?lang=en"><img  src="images/twitter-1.png"></a></li>
@@ -171,6 +215,61 @@
 		</div>
 	</div>
 	<!--footer section end -->
+
+
+	
+	
+	
+
+	
+		<div  class='footer_row footer'>
+			<div  class='footer_column'>
+			 	<div style="padding-top: 5px;" class='orange-column'>
+					<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction4()">
+				
+						<img src="images/home_icon.png">
+						<h5 style="color: #ffff;" class="column22">Home</h5>
+					
+					</button>
+				
+				</div>
+			</div>
+		<div class='footer_column'>
+		  <div style="padding-top: 5px;" class='blue-column'>
+
+			<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction()">
+				
+				<img src="images/about_icon.png">
+				<h5 style="color: #ffff;" class="column22">About</h5>
+			
+			</button>
+		
+		  </div>
+		</div>
+		<div class='footer_column'>
+		  <div style="padding-top: 5px;" class='green-column'>
+			<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction2()">
+				
+				<img src="images/services_icon.png">
+				<h5 style="color: #ffff;" class="column22">Services</h5>
+			
+			</button>
+		  </div>
+		</div>
+
+		
+		<div class='footer_column'>
+			<div style="padding-top: 5px;" class='yellow-column'>
+				<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction3()">
+				
+					<img src="images/about_icon.png">
+					<h5 style="color: #ffff;" class="column22">Contact</h5>
+				
+				</button>
+			</div>
+		</div>
+	  </div>
+	
 	 <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -183,6 +282,98 @@
     <!-- javascript --> 
     <script src="js/owl.carousel.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myDIV");
+			  var y = document.getElementById("myDIV1");
+			  var z = document.getElementById("myDIV3");
+			  var w = document.getElementById("myDIV4");
+			  
+			  if (x.style.display === "block") {
+				x.style.display = "block";
+				y.style.display = "none";
+				z.style.display = "none";
+				w.style.display = "none";
+
+				
+			  } else {
+				x.style.display = "block";
+				y.style.display = "none";
+				z.style.display = "none";
+				w.style.display = "none";
+
+				
+			  }
+			}
+
+			function myFunction2() {
+			  var z = document.getElementById("myDIV3");
+			  var y = document.getElementById("myDIV1");
+			  var x = document.getElementById("myDIV");
+			  var w = document.getElementById("myDIV4");
+
+			  
+			  if (z.style.display === "block") {
+				z.style.display = "block";
+				y.style.display = "none";
+				x.style.display = "none";
+				w.style.display = "none";
+				
+			  } else {
+				z.style.display = "block";
+				y.style.display = "none";
+				x.style.display = "none";
+				w.style.display = "none";
+				
+			  }
+			}
+
+			function myFunction3() {
+			  var z = document.getElementById("myDIV3");
+			  var y = document.getElementById("myDIV1");
+			  var x = document.getElementById("myDIV");
+			  var w = document.getElementById("myDIV4");
+
+			  
+			  if (w.style.display === "block") {
+				w.style.display = "block";
+				z.style.display = "none";
+				y.style.display = "none";
+				x.style.display = "none";
+				
+			  } else {
+				w.style.display = "block";
+				z.style.display = "none";
+				y.style.display = "none";
+				x.style.display = "none";
+				
+			  }
+			}
+			function myFunction4() {
+			  var z = document.getElementById("myDIV3");
+			  var y = document.getElementById("myDIV1");
+			  var x = document.getElementById("myDIV");
+			  var w = document.getElementById("myDIV4");
+
+			  
+			  if (y.style.display === "block") {
+				w.style.display = "none";
+				z.style.display = "none";
+				y.style.display = "block";
+				x.style.display = "none";
+				
+			  } else {
+				w.style.display = "none";
+				z.style.display = "none";
+				y.style.display = "block";
+				x.style.display = "none";
+				
+			  }
+			}
+
+			
+		</script>
     
 </body>
 </html>
