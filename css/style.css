@@ -272,7 +272,7 @@ button {
 }
 
 .bg_main {
-     /*background-image:url("images/bg_main.png");*/
+    
      width: 100%;
       float: left;
       text-align: center;
@@ -902,9 +902,11 @@ a{
 	content: "\f1d8";
 }
 #Authorimage1{
-     background-color: #ffffff;
-     padding-top: 25%;
-     border-radius: 100% / 0 0 30% 30%;
+    
+     margin-top: 5em;
+  background-color: #fff;
+     padding-top: 15%;
+     border-radius: 100% / 40% 40% 0 0;
 }
 
 
@@ -1047,22 +1049,56 @@ a{
    }
    
    .orange-column {
-     background-color: #0c5a66;
+     background-color: #0c4a4a;
      height: 100px;
    }
-   
-   .blue-column {
+   .orange-column:hover {
      background-color: #D4AF37;
+   
+   }
+   .orange-column:active {
+     background-color: #D4AF37;
+   
+   }
+
+   .blue-column {
+     background-color: #0c4a4a;
      height: 100px;
+   }
+
+   .blue-column:hover {
+     background-color: #D4AF37;
+   
+   }
+   .blue-column:active {
+     background-color: #D4AF37;
+   
    }
    
    .green-column {
-     background-color: #0c5a66;
+     background-color: #0c4a4a;
      height: 100px;
    }
-   .yellow-column {
+
+   .green-column:hover {
      background-color: #D4AF37;
+   
+   }
+   .green-column:active {
+     background-color: #D4AF37;
+   
+   }
+   .yellow-column {
+     background-color: #0c4a4a;
      height: 100px;
+   }
+   .yellow-column:hover {
+     background-color: #D4AF37;
+   
+   }
+   .yellow-column:active {
+     background-color: #D4AF37;
+   
    }
    
    .double-column {
@@ -1104,8 +1140,98 @@ a{
      margin-top: 20px;
      
    }
-   .footer{
+.footer{
      position: fixed;
      bottom: -18px;
      margin-top: 3em;
    }
+   /* ==== Dot Menu*/
+
+   *{margin: 0;padding:0px}
+
+                .header{
+                    width: 100%;
+                    background-color: #0d78b600 !important;
+                    height: 60px;
+                }
+
+                .showLeft{
+                    background-color: #0d78b600 !important;
+                    border:1px solid #0d78b600 !important;
+                    text-shadow: none !important;
+                    color:#fff !important;
+                    padding:10px;
+                }
+
+                .icons li {
+                    background: none repeat scroll 0 0 #fff;
+                    height: 7px;
+                    width: 7px;
+                    line-height: 0;
+                    list-style: none outside none;
+                    margin-right: 15px;
+                    margin-top: 3px;
+                    vertical-align: top;
+                    border-radius:50%;
+                    pointer-events: none;
+                }
+
+                .btn-left {
+                    left: 0.4em;
+                }
+
+                .btn-right {
+                    right: 0.4em;
+                }
+
+                .btn-left, .btn-right {
+                    position: absolute;
+                    top: 0.24em;
+                }
+
+                .dropbtn {
+                    background-color: #4CAF50;
+                    position: fixed;
+                    color: white;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .dropbtn:hover, .dropbtn:focus {
+                    background-color: #3e8e41;
+                }
+
+                .dropdown {
+                    position: absolute;
+                    display: inline-block;
+                    right: 0.4em;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: relative;
+                    margin-top: 60px;
+                    background-color: #0c4a4a;
+                    min-width: 160px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+
+                .dropdown-content a {
+                    color: #fff;
+                    
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    width: 100%;
+                }
+                
+
+                .dropdown a:hover {background-color: #D4AF37;}
+
+                .show {
+                    display:block;
+                   
+               }
