@@ -34,7 +34,25 @@
 <body >
 	<!--header section start -->
 	<div class="header_section">
-		<div class="container-fluid">
+
+		 <!-- three dot menu -->
+		 <div  class="dropdown">
+			<!-- three dots -->
+			<ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<!-- menu -->
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#home">Home</a>
+				<a href="#about">Gallary</a>
+				<a href="#contact">Settings</a>
+			</div>
+		</div>
+		
+	</div>
+
 			
 	</div>
 	<!--header section end -->
@@ -222,10 +240,10 @@
 	
 
 	
-		<div  class='footer_row footer'>
+		<div  style="    background-color: #0c4a4a;" class='footer_row footer'>
 			<div  class='footer_column'>
 			 	<div style="padding-top: 5px;" class='orange-column'>
-					<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction4()">
+					<button class="button" style="background-color: #0c4a4a00;" onclick="myFunction4()">
 				
 						<img src="images/home_icon.png">
 						<h5 style="color: #ffff;" class="column22">Home</h5>
@@ -237,7 +255,7 @@
 		<div class='footer_column'>
 		  <div style="padding-top: 5px;" class='blue-column'>
 
-			<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction()">
+			<button class="button" style="background-color: #0c4a4a00;" onclick="myFunction()">
 				
 				<img src="images/about_icon.png">
 				<h5 style="color: #ffff;" class="column22">About</h5>
@@ -248,7 +266,7 @@
 		</div>
 		<div class='footer_column'>
 		  <div style="padding-top: 5px;" class='green-column'>
-			<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction2()">
+			<button class="button" style="background-color: #0c4a4a00;" onclick="myFunction2()">
 				
 				<img src="images/services_icon.png">
 				<h5 style="color: #ffff;" class="column22">Services</h5>
@@ -260,7 +278,7 @@
 		
 		<div class='footer_column'>
 			<div style="padding-top: 5px;" class='yellow-column'>
-				<button style="background-color: rgba(255, 0, 0, 0);" onclick="myFunction3()">
+				<button class="button" style="background-color: #0c4a4a00;" onclick="myFunction3()">
 				
 					<img src="images/about_icon.png">
 					<h5 style="color: #ffff;" class="column22">Contact</h5>
@@ -270,7 +288,7 @@
 		</div>
 	  </div>
 	
-	 <!-- Javascript files-->
+	 <!-- Javascript files       #D4AF37;-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -282,6 +300,7 @@
     <!-- javascript --> 
     <script src="js/owl.carousel.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 		<script>
 			function myFunction() {
@@ -371,6 +390,31 @@
 				
 			  }
 			}
+		
+			function changeLanguage(language) {
+		var element = document.getElementById("url");
+		element.value = language;
+		element.innerHTML = language;
+	}
+
+	function showDropdown() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+
 
 			
 		</script>
